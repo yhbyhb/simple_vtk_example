@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    "spdlog",
+    {
+      "name": "vtk",
+      "features": [
+        "atlmfc",
+        "cuda",
+        "opengl",
+        "tbb",
+        "utf8",
+        "vtkm"
+      ]
+    }
+  ]
+}
