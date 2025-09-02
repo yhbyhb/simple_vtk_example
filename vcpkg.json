@@ -1,16 +1,18 @@
 {
   "dependencies": [
+    "gdcm",
     "spdlog",
     {
       "name": "vtk",
-      "features": [
-        "atlmfc",
-        "cuda",
+      "features": [        
         "opengl",
         "tbb",
-        "utf8",
-        "vtkm"
+        "utf8"
       ]
+    },
+    {
+      "name": "vtk-dicom",
+      "features": ["gdcm"]
     }
   ]
 }
