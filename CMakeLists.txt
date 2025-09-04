@@ -25,3 +25,9 @@ target_link_libraries(${PROJECT_NAME}
   spdlog::spdlog  
   VTK::DICOM
   )
+
+# VTK module auto-init (needed esp. for static builds on Windows)
+vtk_module_autoinit(
+  TARGETS ${PROJECT_NAME}
+  MODULES ${VTK_LIBRARIES}
+)
