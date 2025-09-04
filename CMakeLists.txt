@@ -16,15 +16,15 @@ add_executable(${PROJECT_NAME} main.cpp)
 
 target_sources(${PROJECT_NAME}
   PRIVATE
-    main.cpp  
+    main.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}
- PRIVATE
- ${VTK_LIBRARIES}
-  spdlog::spdlog  
-  VTK::DICOM
-  )
+  PRIVATE
+    ${VTK_LIBRARIES}
+    spdlog::spdlog
+    VTK::DICOM
+)
 
 # VTK module auto-init (needed esp. for static builds on Windows)
 vtk_module_autoinit(
