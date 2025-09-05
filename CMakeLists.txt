@@ -6,6 +6,9 @@ include(UseVcpkg.cmake)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Suppress developer warnings
+set(CMAKE_SUPPRESS_DEVELOPER_WARNINGS 1 CACHE INTERNAL "No dev warnings")
+
 project(simple_vtk_dicom LANGUAGES CXX)
 
 find_package(dicom CONFIG REQUIRED)
